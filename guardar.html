@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar Producto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <img src="assets/img/logo.png" alt="logo" width="100" />
+            <h1 class="text-center">Nuevo Producto</h1>
+            <label><strong>Id</strong></label>
+            <input class="form-control mb-3" id="id">
+            <label><strong>Producto</strong></label>
+            <input class="form-control mb-3" id="nomprod">
+            <label><strong>Precio</strong></label>
+            <input class="form-control mb-3" id="precio" type="number">
+            <label><strong>Stock</strong></label>
+            <input class="form-control mb-3" id="stock" type="number">
+            <label><strong>Categoria</strong></label>
+            <select class="form-control mb-3" id="categoria">
+                <option value="0">Seleccione una Opción</option>
+                <option >Producto del Hogar</option>
+                <option >Tecnologia</option>
+            </select>
+            <label><strong>Descripción</strong></label>
+            <input class="form-control mb-3" id="descripcion">
+            <button id="guardar" class="btn btn-primary">Guardar</button>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

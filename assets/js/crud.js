@@ -26,12 +26,21 @@ const mostrarProducto=()=>{
 
 const renderizarTabla=(productos)=>{
     let index=1
+    let registro=""
     productos.forEach(producto => {
-        console.log(index)
         console.log(producto)
+        registro+="<tr>"+
+                  "<td>"+index+"</td>"+
+                  "<td>"+producto.id+"</td>"+
+                  "<td>"+producto.nomprod+"</td>"+
+                  "<td>"+producto.precio+"</td>"+  
+                  "<td>"+producto.categoria+"</td>"+
+                  "<td>"+producto.stock+"</td>"+
+                  "<td>"+producto.descripcion+"</td>"+
+                  "</tr>"  
         index++
     });
-
+    tbody.innerHTML=registro
 }
 
 
